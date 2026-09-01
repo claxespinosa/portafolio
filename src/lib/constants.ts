@@ -9,7 +9,7 @@ export const NAVIGATION = [
 export const HERO_DATA = {
   title: "Eliza Espinosa",
   subtile: "by Claudia Hernández Espinosa",
-  role: "Arquitecta de Soluciones",
+  role: "Digital Transformation & Solutions Architect",
   tagline: "Precisión Analítica",
   predescription:"Más de una década transformando ecosistemas digitales complejos en flujos de datos eficientes y estratégicos.",
   description: "Mi enfoque se centra en observar los flujos de datos, entender las dependencias del negocio y diagnosticar el problema real antes de proponer una arquitectura.",
