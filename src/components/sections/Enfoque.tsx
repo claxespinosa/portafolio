@@ -105,12 +105,12 @@ export default function Enfoque() {
 
         {/* Cierre de sección / Call to Action */}
       <div className="bg-call pt-10 pb-10 mt-16">
-        <div class="container mx-auto flex flex-col sm:flex-row gap-8 justify-center items-center text-center">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row gap-8 justify-center items-center text-center">
           <p className="w-full text-2xl text-head-obs font-bold tracking-4">
             ¿Necesitas una solución a medida? 
           </p>
           <a 
-            href="#contacto" 
+            href="#contacto"
             className="c-contacto w-full md:w-sm px-10 py-4 bg-purple-600 hover:bg-purple-500 text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-purple-600/20 flex items-center justify-center gap-2 group"
           >
             Contáctame
