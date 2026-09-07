@@ -105,7 +105,7 @@ export default function Enfoque() {
 
         {/* Cierre de sección / Call to Action */}
       <div className="bg-call pt-10 pb-10 mt-16">
-        <div class="container mx-auto px-6 flex flex-col sm:flex-row gap-8 justify-center items-center text-center">
+        <div className="container mx-auto px-6 flex flex-col sm:flex-row gap-8 justify-center items-center text-center">
           <p className="w-full text-2xl text-head-obs font-bold tracking-4">
             ¿Necesitas una solución a medida? 
           </p>
