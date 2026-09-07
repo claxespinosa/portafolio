@@ -1,7 +1,3 @@
 {
   "installCommand": "npm install --foreground-scripts"
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dec7fb8c4694c0efa977c3f29412d60a10eca54b
