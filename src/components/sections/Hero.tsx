@@ -24,7 +24,7 @@ export default function Hero() {
           
           {/* Badge de Rol */}
           <div className="flex justify-center mb-8">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 text-purple-300 text-[11px] font-mono tracking-widest border border-white/10 backdrop-blur-md uppercase font-bold">
+            <span className="inline-flex items-start sm:items-top gap-2 px-4 py-1.5 rounded-full bg-white/5 text-purple-300 text-[11px] font-mono tracking-widest border border-white/10 backdrop-blur-md uppercase font-bold">
               <Terminal size={14} className="text-purple-400" /> {HERO_DATA.role}
             </span>
           </div>
