@@ -237,9 +237,5 @@ export const ENFOQUE_DATA = {
     { label: "Diagnóstico exhaustivo antes de la ejecución técnica", value: "Precisión Analítica" },
     { label: "Arquitecturas robustas que resisten el paso del tiempo", value: "Estabilidad Garantizada" },
     { label: "Soluciones que crecen con tu negocio", value: "Escalabilidad Real" },
-  ],
-<<<<<<< HEAD
-};
-=======
-};
->>>>>>> dec7fb8c4694c0efa977c3f29412d60a10eca54b
+  ]
+  };
