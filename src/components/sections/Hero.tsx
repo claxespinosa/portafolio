@@ -48,7 +48,7 @@ export default function Hero() {
           {/* Acciones */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a 
-              href="#contact"
+              href="#contacto"
               className="w-full sm:w-auto px-10 py-4 bg-purple-600 hover:bg-purple-500 text-white rounded-xl font-bold transition-all duration-300 shadow-lg shadow-purple-600/20 flex items-center justify-center gap-2 group"
             >
               {HERO_DATA.ctaMain}
