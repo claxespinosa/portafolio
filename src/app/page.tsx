@@ -6,22 +6,10 @@ import Contact from "@/components/sections/Contact";
 import Evolution from "@/components/sections/Evolution";
 import Enfoque from "@/components/sections/Enfoque";
 import dynamic from 'next/dynamic'
-
-// El componente solo se descargará en un chunk separado cuando sea necesario
-const ComponentePesado = dynamic(() => import('../components/ComponentePesado'), {
-  loading: () => <p>Cargando...</p>,
-  ssr: false, // Opcional: desactiva el renderizado en el servidor si usa APIs del navegador (window)
+const HeavySection = dynamic(() => import('@/components/sections/HeavySection'), {
+  ssr: false,
+  loading: () => <div className="py-20 animate-pulse bg-white/5 rounded-lg" />
 })
-
-export default function Pagina() {
-  return (
-    <div>
-      <h1>Mi Página</h1>
-      <ComponentePesado />
-    </div>
-  )
-}
-
 
 export default function Home() {
   return (
