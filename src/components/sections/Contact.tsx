@@ -135,10 +135,16 @@ export default function Contact() {
             </div>
             
             <div className="flex flex-col gap-4 pl-4">
-              <a href={`mailto:${CONTACT_DATA.email}`} className="flex items-center gap-3 text-purple-300 hover:text-white transition-colors text-lg">
+              <a href={`mailto:${CONTACT_DATA.email}`} 
+              aria-label={`Enviar correo electrónico a ${CONTACT_DATA.email}`} 
+              className="flex items-center gap-3 text-purple-300 hover:text-white transition-colors text-lg">
                 <Mail size={20} /> {CONTACT_DATA.email}
               </a>
-              <a href={CONTACT_DATA.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-purple-300 hover:text-white transition-colors text-lg">
+              <a href={CONTACT_DATA.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Visitar perfil profesional de LinkedIn en una nueva pestaña" 
+              className="flex items-center gap-3 text-purple-300 hover:text-white transition-colors text-lg">
                 <Icons.linkedin className="w-5 h-5" /> Perfil Profesional
               </a>
             </div>
@@ -176,9 +182,10 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-xs uppercase font-bold text-muted-foreground mb-2 block">Tipo de Solución</label>
+                <label htmlFor="projectType" className="text-xs uppercase font-bold text-muted-foreground mb-2 block">Tipo de Solución</label>
                 <div className="relative">
                   <select 
+                    id="projectType"
                     name="projectType"
                     value={formData.projectType}
                     onChange={handleChange}
@@ -186,7 +193,7 @@ export default function Contact() {
                   >
                     <option value="default" className="bg-slate-900">Selecciona una opción</option>
                     <option value="Arquitectura Web / Sistemas Complejos" className="bg-slate-900">Arquitectura Web / Sistemas Complejos</option>
-                    <option value="aPresencia Digital Ágil" className="bg-slate-900">Presencia Digital Ágil</option>
+                    <option value="Presencia Digital Ágil" className="bg-slate-900">Presencia Digital Ágil</option>
                     <option value="Rescate Técnico / Auditoría" className="bg-slate-900">Rescate Técnico / Auditoría</option>
                     <option value="Consultoría Técnica" className="bg-slate-900">Consultoría Técnica</option>
                     <option value="Otro" className="bg-slate-900">Otro</option>
