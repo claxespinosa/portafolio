@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full h-[100vh] bg-white border-b border-slate-200 py-2 p-6 flex flex-col gap-4 md:hidden animate-in slide-in-from-top text-slate-900 text-right">
+        <div className="absolute top-full left-0 w-full h-[100vh] bg-white border-b border-slate-200 py-2 p-6 flex flex-col gap-4 md:hidden animate-in slide-in-from-top text-slate-900 text-right overflow-hidden">
           <div className="p-8 flex flex-col gap-4">
           {NAVIGATION.map((item) => (
             <a 
@@ -115,7 +115,7 @@ export default function Navbar() {
           </div>
           <div className="p-8 pl-0 border-t border-t-slate-200 flex flex-col items-end text-right w-full">        
             <p className="text-x md:text-x font-medium mb-2 text-slate-00 max-w-2xl leading-tight">
-              Enfoque multidisciplinario y soluciones a medida para cada proyecto.
+              Enfoque multidisciplinario y soluciones a medida para cada proyecto
             </p>
             <div className="relative inline-block justify-end gap-x-2 gap-y-1 max-w-2xl text-slate-600 text-xs font-medium">
               {cards.map((card, index) => (
