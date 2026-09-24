@@ -1,15 +1,13 @@
 import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Services from "@/components/sections/Services";
-import Projects from "@/components/sections/Projects";
-import Contact from "@/components/sections/Contact";
-import Evolution from "@/components/sections/Evolution";
-import Enfoque from "@/components/sections/Enfoque";
-import dynamic from 'next/dynamic'
-const HeavySection = dynamic(() => import('@/components/sections/HeavySection'), {
-  ssr: false,
-  loading: () => <div className="py-20 animate-pulse bg-white/5 rounded-lg" />
-})
+import dynamic from "next/dynamic";
+
+// Carga diferida para todo lo que está "debajo" de la pantalla inicial
+const Evolution = dynamic(() => import("@/components/sections/Evolution"), { ssr: false });
+const About = dynamic(() => import("@/components/sections/About"), { ssr: false });
+const Services = dynamic(() => import("@/components/sections/Services"), { ssr: false });
+const Enfoque = dynamic(() => import("@/components/sections/Enfoque"), { ssr: false });
+const Projects = dynamic(() => import("@/components/sections/Projects"), { ssr: false });
+const Contact = dynamic(() => import("@/components/sections/Contact"), { ssr: false });
 
 export default function Home() {
   return (
