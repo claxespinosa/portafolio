@@ -26,7 +26,7 @@ export default function Evolution() {
     <section id="sobre-mi" className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Título Principal */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-20 leading-tight text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-[#2f3274] mb-20 leading-tight text-center">
           Evolución Profesional<br />
           <span className="text-[#6366f1]">de la Estética a la Estructura</span>
         </h2>
