@@ -230,14 +230,16 @@ export default function Contact() {
 
               {/* Widget de Cloudflare Turnstile */}
               <div className="flex justify-center py-2">
-                <Turnstile
-                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-                  onSuccess={(token) => setTurnstileToken(token)}
-                  options={{ 
-                    theme: 'dark',
-                    appearance: 'interaction-only'
-                  }}
-                />
+                {isVisible && (
+                  <Turnstile
+                    siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                    onSuccess={(token) => setTurnstileToken(token)}
+                    options={{
+                      theme: 'dark',
+                      appearance: 'interaction-only'
+                    }}
+                  />
+                )}
               </div>
 
               {/* Banner de Notificación (Éxito o Error) */}
