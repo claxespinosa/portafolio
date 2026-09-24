@@ -16,8 +16,8 @@ export default function Hero() {
       
       {/* Luces de fondo (Forzamos -z-10 y pointer-events-none) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-1/4 -right-1/4 w-[60%] h-[60%] bg-purple-500/10 rounded-full blur-[120px]"></div>
-        <div className="absolute -bottom-1/4 -left-1/4 w-[60%] h-[60%] bg-blue-500/10 rounded-full blur-[120px]"></div>
+        <div className="absolute -top-1/4 -right-1/4 w-[60%] h-[60%] bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-1/4 -left-1/4 w-[60%] h-[60%] bg-blue-500/10 rounded-full blur-3xl"></div>
       </div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center hero-entrance">
