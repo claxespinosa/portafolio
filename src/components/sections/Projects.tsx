@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { PROJECTS_DATA } from "@/lib/constants";
+import Image from 'next/image';
 import { Lightbulb, AlertTriangle, CheckCircle2 } from "lucide-react";
 
 export default function Projects() {
@@ -50,11 +51,12 @@ export default function Projects() {
               {/* Lado Izquierdo: Imagen */}
              <div className="relative lg:w-[38%] h-[200px] lg:h-auto lg:min-h-[320px] overflow-hidden bg-slate-100">
                 {/*<div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent z-10"></div>*/}
-                <img 
+                <Image 
                   src={project.image} 
                   alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                  loading="lazy"
+                  fill
+                  className="object-cover transition-transform duration-700 hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 {/* Badge de Categoría */}
                 <div className="absolute top-6 left-6 z-20">
