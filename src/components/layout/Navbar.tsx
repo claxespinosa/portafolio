@@ -113,7 +113,7 @@ export default function Navbar() {
             Hablemos
           </a>
           </div>
-          <div className="p-8 pl-4 border-t border-t-slate-200 flex flex-col items-end text-right w-full">        
+          <div className="p-8 pl-0 border-t border-t-slate-200 flex flex-col items-end text-right w-full">        
             <p className="text-x md:text-x font-medium mb-2 text-slate-00 max-w-2xl leading-tight">
               Enfoque multidisciplinario y soluciones a medida para cada proyecto
             </p>
