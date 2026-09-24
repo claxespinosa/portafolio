@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  colorScheme: "dark light",
 };
 
 export default function RootLayout({

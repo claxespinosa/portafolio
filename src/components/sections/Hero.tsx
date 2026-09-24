@@ -1,15 +1,15 @@
-"use client";
+{/*"use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";*/}
 import { HERO_DATA, INDUSTRIES_DATA } from "@/lib/constants";
 import { Terminal, ArrowRight } from "lucide-react";
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
+  {/*const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, []);*/}
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden pt-24 lg:pt-32">
@@ -20,9 +20,8 @@ export default function Hero() {
         <div className="absolute -bottom-1/4 -left-1/4 w-[60%] h-[60%] bg-blue-500/10 rounded-full blur-[120px]"></div>
       </div>
       <div className="container mx-auto px-6 relative z-10">
-        <div className={`text-center ${mounted ? 'hero-entrance' : ''}`}>
+        <div className="text-center hero-entrance">
           
-          {/* Badge de Rol */}
           <div className="flex justify-center mb-8">
             <span className="inline-flex items-start sm:items-top gap-2 px-4 py-1.5 rounded-full bg-white/5 text-purple-300 text-[11px] font-mono tracking-widest border border-white/10 backdrop-blur-md uppercase font-bold">
               <Terminal size={14} className="text-purple-400" /> {HERO_DATA.role}
