@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@marsidev/react-turnstile": "^1.6.1",
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
@@ -31,8 +32,8 @@
     "typescript": "^5"
   },
   "browserslist": [
-  "defaults",
-  "not IE 11",
-  "not dead"
+    "defaults",
+    "not IE 11",
+    "not dead"
   ]
 }

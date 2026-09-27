@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <meta name="color-scheme" content="only light" />
+      </head>
       <body 
         className={cn(inter.className, "antialiased bg-background text-foreground")}
         suppressHydrationWarning
@@ -41,6 +45,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
