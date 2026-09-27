@@ -107,13 +107,13 @@ export default function Navbar() {
             href="#contacto"
             onClick={() => setIsMobileMenuOpen(false)}
             className={cn(
-              "px-8 py-3 mt-4 w-fit rounded-xl font-medium transition-all duration-300 border bg-slate-900 text-2xl text-white border-slate-900 hover:bg-purple-600 hover:border-purple-600 text-right self-end"
+              "px-8 py-3 mt-4 w-fit rounded-xl font-medium transition-all duration-300 border hover:bg-slate-900 hover:border-slate-900 text-2xl text-white border-slate-900 bg-purple-600 border-purple-600 text-right self-end"
             )}
           >
             Hablemos
           </a>
           </div>
-          <div className="p-8 pl-0 border-t border-t-slate-200 flex flex-col items-end text-right w-full">        
+          {/*<div className="p-8 pl-0 border-t border-t-slate-200 flex flex-col items-end text-right w-full">        
             <p className="text-x md:text-x font-medium mb-2 text-slate-00 max-w-2xl leading-tight">
               Enfoque multidisciplinario y soluciones a medida para cada proyecto
             </p>
@@ -127,7 +127,7 @@ export default function Navbar() {
                 </span>
               ))}
             </div>
-          </div>
+          </div>*/}
           <div className="p-8 pb-0 pl-0 border-t border-t-slate-200 flex flex-col items-end text-right w-full">
             <div className="flex gap-4">
                 <a href={`mailto:${CONTACT_DATA.email}`} className="p-2 rounded-full border border-border text-slate-600 hover:border-primary hover:text-purple-300 transition-all">
